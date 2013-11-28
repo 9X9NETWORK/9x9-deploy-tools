@@ -50,26 +50,25 @@ init_receiver () {
 }
 
 # Build 
-build_receiver () {
+update_receiver () {
 	cd $RECEIVER_HOME
-	git checkout develop
-	grunt build
-	grunt debug
+	git checkout develop &>/dev/null
+	git fetch $RECEIVER_GIT &>/dev/null
+	if ! git diff origin/develop &>/dev/null; then
+		git merge origin/develop &>/dev/null
+		git checkout develop
+		grunt build
+		grunt debug
+	fi
 }
 
 case $1 in
 	"init")
 		init_receiver
-		build_receiver
+		update_receiver
 	;;
 	"update")
-		cd $RECEIVER_HOME
-		git checkout develop &>/dev/null
-		git fetch $RECEIVER_GIT &>/dev/null
-		if ! git diff origin/develop &>/dev/null; then
-			git merge origin/develop &>/dev/null
-			build_receiver
-		fi
+		update_receiver
 	;;
 esac
 	
