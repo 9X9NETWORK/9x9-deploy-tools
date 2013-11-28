@@ -43,7 +43,7 @@ init_receiver () {
 		cd $(dirname $RECEIVER_HOME)
 		git clone $RECEIVER_GIT $(basename $RECEIVER_HOME)
 		cd $RECEIVER_HOME
-		git checkout origin/develop
+		git checkout develop
 		npm install 
 		bower install
 	fi
@@ -53,10 +53,7 @@ init_receiver () {
 update_receiver () {
 	cd $RECEIVER_HOME
 	git checkout develop &>/dev/null
-	git fetch $RECEIVER_GIT &>/dev/null
-	if ! git diff origin/develop &>/dev/null; then
-		git merge origin/develop &>/dev/null
-		git checkout develop
+	if git pull | grep -v 'up-to-date' &>/dev/null; then
 		grunt build
 		grunt debug
 	fi
