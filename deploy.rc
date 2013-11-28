@@ -1,0 +1,24 @@
+#!/bin/bash
+# deploy.rc: Init deploy environment & run deploy scripts
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+export PATH
+
+DEPLOYTOOLS_HOME=/home/ubuntu/bin
+
+# Stop mysql 
+pidof mysqld && service mysql stop 
+
+# Create dir
+[ ! -d "/mnt/jetty_heapdump" ] && sudo mkdir /mnt/jetty_heapdump && chown jetty:jetty /mnt/jetty_heapdump
+[ ! -d "/mnt/log" ]            && sudo mkdir /mnt/log 
+[ ! -d "/mnt/log/apache2" ]    && sudo mkdir /mnt/log/apache2
+[ ! -d "/mnt/log/stats" ]      && sudo mkdir /mnt/log/stats && sudo chown ubuntu:ubuntu /mnt/log/stats
+[ ! -d "/mnt/log/top" ]        && sudo mkdir /mnt/log/top && chown ubuntu:ubuntu /mnt/log/top
+[ ! -d "/mnt/tmp" ]            && sudo mkdir /mnt/tmp && sudo chmod 1777 /mnt/tmp
+
+# run deploy scripts
+$DEPLOYTOOLS_HOME/update_corp.sh &>/tmp/update_corp.log
+$DEPLOYTOOLS_HOME/update_cms.sh &>/tmp/update_cms.log
+$DEPLOYTOOLS_HOME/update_rproxy.sh &>/tmp/update_rproxy.log
+$DEPLOYTOOLS_HOME/update_wars.sh &>/tmp/update_wars.log
