@@ -46,6 +46,8 @@ init_receiver () {
 		git checkout develop
 		npm install 
 		bower install
+		grunt build
+		grunt debug
 	fi
 }
 
@@ -53,7 +55,7 @@ init_receiver () {
 update_receiver () {
 	cd $RECEIVER_HOME
 	git checkout develop &>/dev/null
-	if git pull | grep -v 'up-to-date' &>/dev/null; then
+	if ! git pull | grep 'up-to-date' &>/dev/null; then
 		grunt build
 		grunt debug
 	fi
