@@ -10,11 +10,11 @@ DEPLOYTOOLS_HOME=/home/ubuntu/bin
 pidof mysqld && service mysql stop 
 
 # Create dir
-[ ! -d "/mnt/jetty_heapdump" ] && sudo mkdir /mnt/jetty_heapdump && chown jetty:jetty /mnt/jetty_heapdump
+[ ! -d "/mnt/jetty_heapdump" ] && sudo mkdir /mnt/jetty_heapdump && sudo chown jetty:jetty /mnt/jetty_heapdump
 [ ! -d "/mnt/log" ]            && sudo mkdir /mnt/log 
 [ ! -d "/mnt/log/apache2" ]    && sudo mkdir /mnt/log/apache2
 [ ! -d "/mnt/log/stats" ]      && sudo mkdir /mnt/log/stats && sudo chown ubuntu:ubuntu /mnt/log/stats
-[ ! -d "/mnt/log/top" ]        && sudo mkdir /mnt/log/top && chown ubuntu:ubuntu /mnt/log/top
+[ ! -d "/mnt/log/top" ]        && sudo mkdir /mnt/log/top && sudo chown ubuntu:ubuntu /mnt/log/top
 [ ! -d "/mnt/tmp" ]            && sudo mkdir /mnt/tmp && sudo chmod 1777 /mnt/tmp
 
 # run deploy scripts
