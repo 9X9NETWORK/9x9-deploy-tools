@@ -24,6 +24,4 @@ $DEPLOYTOOLS_HOME/update_rproxy.sh &>/tmp/update_rproxy.log
 $DEPLOYTOOLS_HOME/update_wars.sh &>/tmp/update_wars.log
 $DEPLOYTOOLS_HOME/update_player50.sh &> /tmp/update_player50.log
 $DEPLOYTOOLS_HOME/update_9x9receiver.sh init &>/tmp/update_9x9receiver.log
-
-# Update cronjob
-crontab -l | grep 'update_9x9receiver.sh' || sudo su - -c "echo '* * * * * /home/ubuntu/bin/update_9x9receiver.sh update &>/dev/null' >> /var/spool/cron/crontabs/ubuntu"
+$DEPLOYTOOLS_HOME/update_ubuntuCrontab.sh &> /tmp/update_ubuntuCrontab.log
