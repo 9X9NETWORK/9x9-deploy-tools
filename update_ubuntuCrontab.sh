@@ -6,4 +6,8 @@ export PATH
 CRONTAB_CONTENT=/home/ubuntu/bin/ubuntu.crontab
 CRONTAB=/var/spool/cron/crontabs/ubuntu
 
-sudo su - -c "cat $CRONTAB_CONTENT > $CRONTAB"
+# Update crontab
+sudo cp -f $CRONTAB_CONTENT  $CRONTAB
+sudo chown ubuntu:crontab $CRONTAB
+sudo chmod 600 $CRONTAB
+
