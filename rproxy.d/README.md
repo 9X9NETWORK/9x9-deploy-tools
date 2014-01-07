@@ -1,4 +1,4 @@
-rproxy configuration maker
+(NOT TESTED!) rproxy configuration maker
 ================================
 
 To make ***rproxy*** configuration easier and modulized.
