@@ -1,0 +1,16 @@
+
+LimitRequestLine 32760
+LimitRequestFieldSize 32760
+
+<VirtualHost *:80>
+    RewriteEngine on
+    ProxyPreserveHost On
+    ProxyRequests off
+
+    <Directory />
+        Options FollowSymLinks
+        AllowOverride None
+    </Directory>
+
+    ######## Begin of configuration components ########
+
