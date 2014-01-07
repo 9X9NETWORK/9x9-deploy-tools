@@ -5,8 +5,8 @@ To make ***rproxy*** configuration easier and modulized.
 
 NOTE:
 
-> If this is firt time **make install**,
-> please don't forget to backup the original ***rproxy*** copy.
+> If this is the firt time to ***make install***,
+> please don't forget to backup the original **rproxy** copy.
 
 For production:
 
