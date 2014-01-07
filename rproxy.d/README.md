@@ -3,9 +3,9 @@
 
 To make ***rproxy*** configuration easier and modulized.
 
-*   rproxy.**{module}**.conf  
+*   rproxy.***{module}***.conf  
     modullized rproxy configurations
-*   apps.**{appName}**.conf  
+*   apps.***{appName}***.conf  
     private label apps related configuration
 
 NOTE:
