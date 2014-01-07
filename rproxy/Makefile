@@ -1,4 +1,6 @@
 
+APACHE_CONF_D=/etc/apache2/conf.d/
+
 RPROXY_CONF= \
 	rproxy.android.conf \
 	rproxy.chromecast.conf \
@@ -44,6 +46,9 @@ dev: ${DEV_CONF} rproxy.head rproxy.tail
 	cat rproxy.head >  rproxy
 	cat ${DEV_CONF} >> rproxy
 	cat rproxy.tail >> rproxy
+
+install: rproxy
+	sudo cp -v rproxy ${APACHE_CONF_D} && echo "\nRestarting apache server ...\n" && sudo service apache2 restart
 
 clean:
 	rm rproxy
