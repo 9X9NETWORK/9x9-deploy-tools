@@ -16,7 +16,9 @@ NOTE:
 For production:
 
     :::bash
-    make clean install
+    make clean
+    make
+    make install
 
 For beagle site:
 
