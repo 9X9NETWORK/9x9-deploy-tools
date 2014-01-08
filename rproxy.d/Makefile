@@ -1,5 +1,5 @@
 
-APACHE_CONF_D=/etc/apache2/conf.d/
+APACHE_CONF_DIR=/etc/apache2/conf.d/
 
 RPROXY_CONF= \
 	rproxy.android.conf \
@@ -48,7 +48,7 @@ dev: ${DEV_CONF} rproxy.head rproxy.tail
 	cat rproxy.tail >> rproxy
 
 install: rproxy
-	sudo cp -v rproxy ${APACHE_CONF_D} && echo "\nRestarting apache server ...\n" && sudo service apache2 restart
+	sudo cp -v rproxy ${APACHE_CONF_DIR} && echo "\nRestarting apache server ...\n" && sudo service apache2 restart
 
 clean:
 	rm rproxy

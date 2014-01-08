@@ -13,20 +13,11 @@ NOTE:
 > If this is the firt time to ***make install***,
 > please don't forget to backup the original **rproxy** copy.
 
-For production:
+Installation
+--------------------------------
 
     :::bash
     make clean
     make
     make install
-
-For beagle site:
-
-    :::bash
-    make beagle install
-
-For development site:
-
-    :::bash
-    make dev install
 
