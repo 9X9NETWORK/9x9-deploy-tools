@@ -51,5 +51,5 @@ install: rproxy
 	sudo cp -v rproxy ${APACHE_CONF_DIR} && echo "\nRestarting apache server ...\n" && sudo service apache2 restart
 
 clean:
-	rm rproxy
+	rm -vf rproxy
 
