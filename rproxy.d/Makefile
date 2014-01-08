@@ -48,7 +48,7 @@ dev: ${DEV_CONF} rproxy.head rproxy.tail
 	cat rproxy.tail >> rproxy
 
 install: rproxy
-	sudo cp -v rproxy ${APACHE_CONF_DIR} && echo "\nRestarting apache server ...\n" && sudo service apache2 restart
+	sudo cp -v rproxy ${APACHE_CONF_DIR} && sudo service apache2 restart
 
 clean:
 	rm -vf rproxy

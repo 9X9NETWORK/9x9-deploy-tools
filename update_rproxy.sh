@@ -2,7 +2,7 @@
 
 CWD=$(dirname "$(readlink -f "$0")")
 
-echo "===`hostname`==="
+echo "==== `hostname` ===="
 date
 
 source "$CWD/update_deployTools.sh"
