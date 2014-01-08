@@ -1,8 +1,8 @@
-
 LimitRequestLine 32760
 LimitRequestFieldSize 32760
 
 <VirtualHost *:80>
+
     RewriteEngine on
     ProxyPreserveHost On
     ProxyRequests off
@@ -13,4 +13,3 @@ LimitRequestFieldSize 32760
     </Directory>
 
     ######## Begin of configuration components ########
-
