@@ -9,7 +9,7 @@ RPROXY_CONF= \
 	rproxy.geoip.conf \
 	rproxy.ios.conf \
 	rproxy.jetty.conf \
-	rproxy.player50.conf
+	rproxy.mobile.conf
 
 APPS_CONF= \
 	apps.9x9.conf \
@@ -20,13 +20,14 @@ APPS_CONF= \
 	apps.tzuchi40.conf
 
 BEAGLE_CONF= \
+	rproxy.web.conf \
 	rproxy.ytcrawler.conf \
 	rproxy.apidocs.conf
 
 DEV_CONF= \
 	rproxy.cms.conf \
 	rproxy.jetty.conf \
-	rproxy.player50.conf
+	rproxy.mobile.conf
 
 # production conf is default
 rproxy: ${APPS_CONF} ${RPROXY_CONF} rproxy.head rproxy.tail
