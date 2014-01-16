@@ -21,3 +21,8 @@ Installation
     make
     make install
 
+for beagle site:
+
+    :::bash
+    make beagle install
+
