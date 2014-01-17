@@ -5,7 +5,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 export PATH
 
 DEPLOYTOOLS_GIT=git@bitbucket.org:9x9group/deploytools.git
-DEPLOYTOOLS_HOME=/home/ubuntu/bin
+DEPLOYTOOLS_HOME=$(dirname "$(readlink -f "$0")")
 
 # Sync the latest deploy tools
 cd $DEPLOYTOOLS_HOME
