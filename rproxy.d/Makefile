@@ -25,6 +25,7 @@ BEAGLE_CONF= \
 	rproxy.apidocs.conf
 
 DEV_CONF= \
+	rproxy.web.conf \
 	rproxy.cms.conf \
 	rproxy.jetty.conf \
 	rproxy.mobile.conf
