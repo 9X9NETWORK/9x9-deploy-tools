@@ -10,4 +10,4 @@ CRONTAB=/var/spool/cron/crontabs/ubuntu
 sudo cp -f $CRONTAB_CONTENT  $CRONTAB
 sudo chown ubuntu:crontab $CRONTAB
 sudo chmod 600 $CRONTAB
-sudo reload cron
+sudo restart cron
