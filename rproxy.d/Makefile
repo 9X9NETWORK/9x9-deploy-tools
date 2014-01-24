@@ -2,6 +2,7 @@
 APACHE_CONF_DIR=/etc/apache2/conf.d/
 
 RPROXY_CONF= \
+	rproxy.web.conf \
 	rproxy.android.conf \
 	rproxy.chromecast.conf \
 	rproxy.cms.conf \
