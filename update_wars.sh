@@ -3,7 +3,7 @@
 PKG_SERVER="moveout-log.9x9.tv"
 PKGS="root cms mgnt"
 
-ERROR="OK"
+ERROR="No Update"
 
 tempdir=$(mktemp -d)
 cd $tempdir
@@ -31,6 +31,8 @@ for p in $PKGS; do
   fi
   
   #echo $tempdir
+
+  ERROR="OK"
   
   wget -q http://$PKG_SERVER/updates/$p/$v1/$p.md5
   wget -q http://$PKG_SERVER/updates/$p/$v1/$p.war
