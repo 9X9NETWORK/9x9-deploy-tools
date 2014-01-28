@@ -25,6 +25,13 @@ BEAGLE_CONF= \
 	rproxy.ytcrawler.conf \
 	rproxy.apidocs.conf
 
+DEV6_CONF= \
+        rproxy.dev6.conf \
+	rproxy.web.conf \
+	rproxy.cms.conf \
+	rproxy.jetty.conf \
+	rproxy.mobile.conf
+
 DEV_CONF= \
 	rproxy.web.conf \
 	rproxy.cms.conf \
@@ -48,6 +55,11 @@ beagle: ${BEAGLE_CONF} ${APPS_CONF} ${RPROXY_CONF} rproxy.head rproxy.tail
 dev: ${DEV_CONF} rproxy.head rproxy.tail
 	cat rproxy.head >  rproxy
 	cat ${DEV_CONF} >> rproxy
+	cat rproxy.tail >> rproxy
+
+dev6: ${DEV_CONF} rproxy.head rproxy.tail
+	cat rproxy.head >  rproxy
+	cat ${DEV6_CONF} >> rproxy
 	cat rproxy.tail >> rproxy
 
 install: rproxy
