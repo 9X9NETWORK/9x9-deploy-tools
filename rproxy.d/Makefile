@@ -21,12 +21,11 @@ APPS_CONF= \
 	apps.tzuchi40.conf
 
 BEAGLE_CONF= \
-	rproxy.web.conf \
 	rproxy.ytcrawler.conf \
 	rproxy.apidocs.conf
 
 DEV6_CONF= \
-        rproxy.dev6.conf \
+    rproxy.dev6.conf \
 	rproxy.web.conf \
 	rproxy.cms.conf \
 	rproxy.jetty.conf \
