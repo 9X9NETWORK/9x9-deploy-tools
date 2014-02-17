@@ -10,5 +10,5 @@
 
     ErrorLog /var/log/apache2/rproxy-error.log
     CustomLog "|/usr/bin/tee -a /var/log/apache2/rproxy-access.log | /usr/bin/logger -thttpd -plocal6.notice" combined
-</VirtualHost>
 
+</VirtualHost>
