@@ -21,12 +21,11 @@ APPS_CONF= \
 	apps.tzuchi40.conf
 
 BEAGLE_CONF= \
-	rproxy.web.conf \
 	rproxy.ytcrawler.conf \
 	rproxy.apidocs.conf
 
 DEV6_CONF= \
-        rproxy.dev6.conf \
+    rproxy.dev6.conf \
 	rproxy.web.conf \
 	rproxy.cms.conf \
 	rproxy.jetty.conf \
@@ -63,8 +62,8 @@ dev6: ${DEV_CONF} rproxy.head rproxy.tail
 	cat rproxy.tail >> rproxy
 
 install: rproxy
-	sudo cp -v rproxy ${APACHE_CONF_DIR} && echo "\nRestarting apache server ...\n" && sudo service apache2 restart
+	sudo cp -v rproxy ${APACHE_CONF_DIR} && sudo service apache2 restart
 
 clean:
-	rm rproxy
+	rm -vf rproxy
 
