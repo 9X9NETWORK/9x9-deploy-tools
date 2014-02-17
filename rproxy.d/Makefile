@@ -2,6 +2,7 @@
 APACHE_CONF_DIR=/etc/apache2/conf.d/
 
 RPROXY_CONF= \
+	rproxy.web.conf \
 	rproxy.android.conf \
 	rproxy.chromecast.conf \
 	rproxy.cms.conf \
@@ -9,7 +10,7 @@ RPROXY_CONF= \
 	rproxy.geoip.conf \
 	rproxy.ios.conf \
 	rproxy.jetty.conf \
-	rproxy.player50.conf
+	rproxy.mobile.conf
 
 APPS_CONF= \
 	apps.9x9.conf \
@@ -23,10 +24,18 @@ BEAGLE_CONF= \
 	rproxy.ytcrawler.conf \
 	rproxy.apidocs.conf
 
-DEV_CONF= \
+DEV6_CONF= \
+    rproxy.dev6.conf \
+	rproxy.web.conf \
 	rproxy.cms.conf \
 	rproxy.jetty.conf \
-	rproxy.player50.conf
+	rproxy.mobile.conf
+
+DEV_CONF= \
+	rproxy.web.conf \
+	rproxy.cms.conf \
+	rproxy.jetty.conf \
+	rproxy.mobile.conf
 
 # production conf is default
 rproxy: ${APPS_CONF} ${RPROXY_CONF} rproxy.head rproxy.tail
@@ -45,6 +54,11 @@ beagle: ${BEAGLE_CONF} ${APPS_CONF} ${RPROXY_CONF} rproxy.head rproxy.tail
 dev: ${DEV_CONF} rproxy.head rproxy.tail
 	cat rproxy.head >  rproxy
 	cat ${DEV_CONF} >> rproxy
+	cat rproxy.tail >> rproxy
+
+dev6: ${DEV_CONF} rproxy.head rproxy.tail
+	cat rproxy.head >  rproxy
+	cat ${DEV6_CONF} >> rproxy
 	cat rproxy.tail >> rproxy
 
 install: rproxy
