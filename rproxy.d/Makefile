@@ -1,4 +1,3 @@
-
 APACHE_CONF_DIR=/etc/apache2/conf.d/
 
 RPROXY_CONF= \
@@ -25,7 +24,8 @@ BEAGLE_CONF= \
 	rproxy.apidocs.conf
 
 DEV6_CONF= \
-    rproxy.dev6.conf \
+	rproxy.ytcrawler.conf \
+	rproxy.dev6.conf \
 	rproxy.web.conf \
 	rproxy.cms.conf \
 	rproxy.jetty.conf \
