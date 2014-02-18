@@ -25,11 +25,7 @@ BEAGLE_CONF= \
 
 DEV6_CONF= \
 	rproxy.ytcrawler.conf \
-	rproxy.dev6.conf \
-	rproxy.web.conf \
-	rproxy.cms.conf \
-	rproxy.jetty.conf \
-	rproxy.mobile.conf
+	rproxy.dev6.conf
 
 DEV_CONF= \
 	rproxy.web.conf \
@@ -56,10 +52,11 @@ dev: ${DEV_CONF} rproxy.head rproxy.tail
 	cat ${DEV_CONF} >> rproxy
 	cat rproxy.tail >> rproxy
 
-dev6: ${DEV_CONF} rproxy.head rproxy.tail
-	cat rproxy.head >  rproxy
+dev6: ${DEV6_CONF} ${DEV_CONF} rproxy.head rproxy.tail
+	cat rproxy.head  >  rproxy
+	cat ${DEV_CONF}  >> rproxy
 	cat ${DEV6_CONF} >> rproxy
-	cat rproxy.tail >> rproxy
+	cat rproxy.tail  >> rproxy
 
 install: rproxy
 	sudo cp -v rproxy ${APACHE_CONF_DIR} && sudo service apache2 restart
