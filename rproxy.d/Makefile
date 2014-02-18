@@ -17,7 +17,6 @@ APPS_CONF= \
 	apps.ddtv.conf \
 	apps.fcu.conf \
 	apps.goodtv.conf \
-	apps.tzuchi40.conf
 
 BEAGLE_CONF= \
 	rproxy.ytcrawler.conf \
