@@ -15,7 +15,12 @@ APPS_CONF= \
 	apps.cts.conf \
 	apps.ddtv.conf \
 	apps.fcu.conf \
-	apps.goodtv.conf
+	apps.goodtv.conf \
+	apps.crashcourse.conf \
+	apps.networka.conf \
+	apps.collegehumor.conf \
+	apps.smosh.conf \
+	apps.shane.conf
 
 BEAGLE_CONF= \
 	rproxy.ytcrawler.conf \
