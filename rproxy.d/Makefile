@@ -20,7 +20,13 @@ APPS_CONF= \
 	apps.networka.conf \
 	apps.collegehumor.conf \
 	apps.smosh.conf \
-	apps.shane.conf
+	apps.shane.conf \
+	apps.nba.conf \
+	apps.joeygraceffa.conf \
+	apps.history.conf \
+	apps.spinninrec.conf \
+	apps.thefinebros.conf
+ 
 
 BEAGLE_CONF= \
 	rproxy.ytcrawler.conf \
