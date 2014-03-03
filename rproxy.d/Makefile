@@ -25,7 +25,31 @@ APPS_CONF= \
 	apps.joeygraceffa.conf \
 	apps.history.conf \
 	apps.spinninrec.conf \
-	apps.thefinebros.conf
+	apps.thefinebros.conf \
+	apps.awesomenesstv.conf \
+	apps.chinatimesflipr.conf \
+	apps.clevvertv.conf \
+	apps.ctsdemo.conf \
+	apps.echomusic.conf \
+	apps.eratvgroup.conf \
+	apps.ettvflipr.conf \
+	apps.foxflipr.conf \
+	apps.ftvflipr.conf \
+	apps.gameview.conf \
+	apps.gtvflipr.conf \
+	apps.magazine.conf \
+	apps.musicvideo.conf \
+	apps.nexttv.conf \
+	apps.piliflipr.conf \
+	apps.setflipr.conf \
+	apps.superstar.conf \
+	apps.tbsflipr.conf \
+	apps.thenewslens.conf \
+	apps.twsuperstar.conf \
+	apps.tzuchi.conf \
+	apps.tzuchiorg.conf \
+	apps.udntv.conf \
+	apps.vice.conf
  
 
 BEAGLE_CONF= \
