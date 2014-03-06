@@ -24,5 +24,6 @@ $DEPLOYTOOLS_HOME/update_rproxy.sh &>/tmp/update_rproxy.log
 $DEPLOYTOOLS_HOME/update_wars.sh &>/tmp/update_wars.log
 $DEPLOYTOOLS_HOME/update_player50.sh &> /tmp/update_player50.log
 $DEPLOYTOOLS_HOME/update_web.sh &> /tmp/update_web.log
-#$DEPLOYTOOLS_HOME/update_9x9receiver.sh init &>/tmp/update_9x9receiver.log
+$DEPLOYTOOLS_HOME/update_9x9receiver.sh &>/tmp/update_9x9receiver.log
+$DEPLOYTOOLS_HOME/update_p12files.sh &>/tmp/update_p12files.log
 $DEPLOYTOOLS_HOME/update_ubuntuCrontab.sh &> /tmp/update_ubuntuCrontab.log
