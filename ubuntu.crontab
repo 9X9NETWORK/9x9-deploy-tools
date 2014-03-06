@@ -25,5 +25,5 @@
 */2 * * * * /home/ubuntu/bin/stats.sh >>/mnt/log/stats/stats_$(date +\%Y\%m\%d).log 2>&1
 3-59/5 * * * * /home/ubuntu/bin/get_jstat.sh
 1 * * * * /home/ubuntu/bin/update_cms.sh
-#* * * * * /home/ubuntu/bin/update_9x9receiver.sh update &>/dev/null
+1 * * * * /home/ubuntu/bin/update_9x9receiver.sh 
 
