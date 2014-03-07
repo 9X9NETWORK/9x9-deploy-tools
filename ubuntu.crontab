@@ -26,4 +26,5 @@
 3-59/5 * * * * /home/ubuntu/bin/get_jstat.sh
 1 * * * * /home/ubuntu/bin/update_cms.sh
 1 * * * * /home/ubuntu/bin/update_9x9receiver.sh 
+1 * * * * /home/ubuntu/bin/update_9x9crop2014.sh
 
