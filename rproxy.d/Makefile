@@ -50,7 +50,8 @@ APPS_CONF= \
 	apps.tzuchi.conf \
 	apps.tzuchiorg.conf \
 	apps.udntv.conf \
-	apps.vice.conf
+	apps.vice.conf \
+	apps.newsflipr.conf
  
 
 BEAGLE_CONF= \
