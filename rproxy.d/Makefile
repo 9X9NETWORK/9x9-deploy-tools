@@ -51,7 +51,7 @@ APPS_CONF= \
 	apps.tzuchiorg.conf \
 	apps.udntv.conf \
 	apps.vice.conf \
-	apps.newsflipr.conf
+	apps.news.conf
  
 
 BEAGLE_CONF= \
