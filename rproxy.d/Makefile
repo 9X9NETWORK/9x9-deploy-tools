@@ -5,6 +5,7 @@ RPROXY_CONF= \
 	rproxy.web.conf \
 	rproxy.android.conf \
 	rproxy.chromecast.conf \
+	rproxy.chromecastDemo.conf \
 	rproxy.cms.conf \
 	rproxy.corp.conf \
 	rproxy.geoip.conf \
