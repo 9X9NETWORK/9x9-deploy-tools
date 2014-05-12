@@ -93,6 +93,10 @@ dev6: ${DEV6_CONF} ${DEV_CONF} rproxy.head rproxy.tail
 	cat ${DEV_CONF}  >> rproxy
 	cat ${DEV6_CONF} >> rproxy
 	cat rproxy.tail  >> rproxy
+	cat rproxy.head.dev6ssl  >>  rproxy
+	cat ${DEV_CONF}  >> rproxy
+	cat ${DEV6_CONF} >> rproxy
+	cat rproxy.tail  >> rproxy
 
 install: rproxy
 	sudo cp -v rproxy ${APACHE_CONF_DIR} && sudo service apache2 restart

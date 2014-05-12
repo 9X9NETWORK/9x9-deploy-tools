@@ -1,0 +1,17 @@
+
+<VirtualHost *:443>
+
+    RewriteEngine on
+    ProxyPreserveHost On
+    ProxyRequests off
+    SSLEngine on
+    SSLCertificateFile    /etc/ssl/certs/ssl-cert-snakeoil.pem
+    SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
+
+
+    <Directory />
+        Options FollowSymLinks
+        AllowOverride None
+    </Directory>
+
+    ######## Begin of configuration components ########
