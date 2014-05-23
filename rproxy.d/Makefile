@@ -54,12 +54,13 @@ APPS_CONF= \
 	apps.vice.conf \
 	apps.news.conf
  
-
 BEAGLE_CONF= \
+	rproxy.prerender.conf \
 	rproxy.ytcrawler.conf \
 	rproxy.apidocs.conf
 
 DEV6_CONF= \
+	rproxy.prerender.conf \
 	rproxy.ytcrawler.conf \
 	rproxy.dev6.conf
 
