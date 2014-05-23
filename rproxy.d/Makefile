@@ -61,6 +61,7 @@ BEAGLE_CONF= \
 
 DEV6_CONF= \
 	rproxy.prerender.conf \
+	rproxy.corp.conf \
 	rproxy.ytcrawler.conf \
 	rproxy.dev6.conf
 
@@ -91,12 +92,12 @@ dev: ${DEV_CONF} rproxy.head rproxy.tail
 
 dev6: ${DEV6_CONF} ${DEV_CONF} rproxy.head rproxy.tail
 	cat rproxy.head  >  rproxy
-	cat ${DEV_CONF}  >> rproxy
 	cat ${DEV6_CONF} >> rproxy
+	cat ${DEV_CONF}  >> rproxy
 	cat rproxy.tail  >> rproxy
 	cat rproxy.head.dev6ssl  >>  rproxy
-	cat ${DEV_CONF}  >> rproxy
 	cat ${DEV6_CONF} >> rproxy
+	cat ${DEV_CONF}  >> rproxy
 	cat rproxy.tail  >> rproxy
 
 install: rproxy
