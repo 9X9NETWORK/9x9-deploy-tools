@@ -61,9 +61,9 @@ BEAGLE_CONF= \
 
 DEV6_CONF= \
 	rproxy.prerender.conf \
+	rproxy.dev6.conf \
 	rproxy.corp.conf \
-	rproxy.ytcrawler.conf \
-	rproxy.dev6.conf
+	rproxy.ytcrawler.conf
 
 DEV_CONF= \
 	rproxy.web.conf \
