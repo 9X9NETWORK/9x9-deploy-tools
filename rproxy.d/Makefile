@@ -80,8 +80,8 @@ rproxy: ${APPS_CONF} ${RPROXY_CONF} rproxy.head rproxy.tail
 
 beagle: ${BEAGLE_CONF} ${APPS_CONF} ${RPROXY_CONF} rproxy.head rproxy.tail
 	cat rproxy.head    >  rproxy
-	cat ${RPROXY_CONF} >> rproxy
 	cat ${BEAGLE_CONF} >> rproxy
+	cat ${RPROXY_CONF} >> rproxy
 	cat ${APPS_CONF}   >> rproxy
 	cat rproxy.tail    >> rproxy
 
