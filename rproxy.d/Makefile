@@ -52,7 +52,9 @@ APPS_CONF= \
 	apps.tzuchiorg.conf \
 	apps.udntv.conf \
 	apps.vice.conf \
-	apps.news.conf
+	apps.news.conf \
+	apps.daaitv.conf \
+	apps.gametube.conf
  
 BEAGLE_CONF= \
 	rproxy.prerender.conf \
