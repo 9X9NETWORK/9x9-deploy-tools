@@ -3,6 +3,7 @@ APACHE_CONF_DIR=/etc/apache2/conf.d/
 RPROXY_CONF= \
 	rproxy.fliprCorp.conf \
 	rproxy.web.conf \
+	rproxy.vidcon2014.conf \
 	rproxy.android.conf \
 	rproxy.chromecast.conf \
 	rproxy.chromecastDemo.conf \
