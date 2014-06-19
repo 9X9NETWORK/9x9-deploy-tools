@@ -29,4 +29,5 @@
 */15 * * * * /home/ubuntu/bin/update_9x9crop2014.sh
 15 0 * * * /home/ubuntu/bin/backup_9x9web-log.sh
 */5 * * * * /home/ubuntu/bin/update_web.sh
+*/5 * * * * /home/ubuntu/bin/update_vidcon2014.sh
 
