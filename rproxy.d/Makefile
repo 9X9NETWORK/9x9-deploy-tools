@@ -60,6 +60,7 @@ APPS_CONF= \
 BEAGLE_CONF= \
 	rproxy.prerender.conf \
 	rproxy.ytcrawler.conf \
+	rproxy.websocket.conf \
 	rproxy.apidocs.conf
 
 DEV6_CONF= \
