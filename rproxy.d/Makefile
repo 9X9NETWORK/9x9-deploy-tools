@@ -7,6 +7,7 @@ RPROXY_CONF= \
 	rproxy.android.conf \
 	rproxy.chromecast.conf \
 	rproxy.chromecastDemo.conf \
+	rproxy.flipr6.conf \
 	rproxy.cms.conf \
 	rproxy.corp.conf \
 	rproxy.geoip.conf \
