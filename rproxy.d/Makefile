@@ -16,6 +16,7 @@ RPROXY_CONF= \
 
 APPS_CONF= \
 	apps.9x9.conf \
+	apps.cts.conf \
 	apps.ddtv.conf \
 	apps.fcu.conf \
 	apps.goodtv.conf \
