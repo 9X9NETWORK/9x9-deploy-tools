@@ -16,7 +16,6 @@ RPROXY_CONF= \
 
 APPS_CONF= \
 	apps.9x9.conf \
-	apps.cts.conf \
 	apps.ddtv.conf \
 	apps.fcu.conf \
 	apps.goodtv.conf \
@@ -33,7 +32,6 @@ APPS_CONF= \
 	apps.awesomenesstv.conf \
 	apps.chinatimesflipr.conf \
 	apps.clevvertv.conf \
-	apps.ctsdemo.conf \
 	apps.echomusic.conf \
 	apps.eratvgroup.conf \
 	apps.ettvflipr.conf \
