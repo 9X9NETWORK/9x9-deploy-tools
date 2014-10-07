@@ -90,7 +90,7 @@ beagle: ${BEAGLE_CONF} ${APPS_CONF} ${RPROXY_CONF} rproxy.head rproxy.tail
 	cat ${RPROXY_CONF} >> rproxy
 	cat ${APPS_CONF}   >> rproxy
 	cat rproxy.tail    >> rproxy
-	cat rproxy.head.dev6ssl  >>  rproxy
+	cat rproxy.head.ssl  >>  rproxy
 	cat ${BEAGLE_CONF} >> rproxy
 	cat ${RPROXY_CONF} >> rproxy
 	cat ${APPS_CONF}   >> rproxy
@@ -106,7 +106,7 @@ dev6: ${DEV6_CONF} ${DEV_CONF} rproxy.head rproxy.tail
 	cat ${DEV6_CONF} >> rproxy
 	cat ${DEV_CONF}  >> rproxy
 	cat rproxy.tail  >> rproxy
-	cat rproxy.head.dev6ssl  >>  rproxy
+	cat rproxy.head.ssl  >>  rproxy
 	cat ${DEV6_CONF} >> rproxy
 	cat ${DEV_CONF}  >> rproxy
 	cat rproxy.tail  >> rproxy
