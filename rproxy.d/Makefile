@@ -55,7 +55,8 @@ APPS_CONF= \
 	apps.vice.conf \
 	apps.news.conf \
 	apps.daaitv.conf \
-	apps.gametube.conf
+	apps.gametube.conf \
+	apps.cw.conf
  
 BEAGLE_CONF= \
 	rproxy.prerender.conf \
