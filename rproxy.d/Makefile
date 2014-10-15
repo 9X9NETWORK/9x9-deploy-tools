@@ -20,6 +20,7 @@ APPS_CONF= \
 	apps.ddtv.conf \
 	apps.fcu.conf \
 	apps.goodtv.conf \
+	apps.fliprctvbayarea.conf \
 	apps.crashcourse.conf \
 	apps.networka.conf \
 	apps.collegehumor.conf \
