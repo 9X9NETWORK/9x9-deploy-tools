@@ -21,6 +21,7 @@ APPS_CONF= \
 	apps.fcu.conf \
 	apps.goodtv.conf \
 	apps.fliprctvbayarea.conf \
+	apps.lycheetv.conf \
 	apps.crashcourse.conf \
 	apps.networka.conf \
 	apps.collegehumor.conf \
