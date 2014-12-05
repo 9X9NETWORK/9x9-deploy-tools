@@ -59,6 +59,7 @@ APPS_CONF= \
 	apps.daaitv.conf \
 	apps.gametube.conf \
 	apps.cw.conf \
+	apps.hkstv.conf \
 	apps.test.conf
  
 BEAGLE_CONF= \
