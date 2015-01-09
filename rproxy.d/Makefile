@@ -60,6 +60,7 @@ APPS_CONF= \
 	apps.gametube.conf \
 	apps.cw.conf \
 	apps.hkstv.conf \
+	apps.portico.conf \
 	apps.test.conf
  
 BEAGLE_CONF= \
