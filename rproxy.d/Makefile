@@ -79,6 +79,7 @@ DEV_CONF= \
 	rproxy.web.conf \
 	rproxy.cms.conf \
 	rproxy.jetty.conf \
+	rproxy.corp.conf \
 	rproxy.mobile.conf
 
 # production conf is default
