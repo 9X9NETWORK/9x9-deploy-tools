@@ -104,6 +104,9 @@ beagle: ${BEAGLE_CONF} ${APPS_CONF} ${RPROXY_CONF} rproxy.head rproxy.tail
 dev: ${DEV_CONF} rproxy.head rproxy.tail
 	cat rproxy.head >  rproxy
 	cat ${DEV_CONF} >> rproxy
+	cat rproxy.tail  >> rproxy
+	cat rproxy.head.ssl  >>  rproxy
+	cat ${DEV_CONF} >> rproxy
 	cat rproxy.tail >> rproxy
 
 dev6: ${DEV6_CONF} ${DEV_CONF} rproxy.head rproxy.tail
